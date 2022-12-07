@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    
+</head>
+
+<body>
+    <h1> Following are the titles of given websites: </h1>
+    
+    <ul>
+        <% if (type !== "string") { %>
+            <li> <%= address1 %> - "<%= address1 %>" </li>
+            <li> <%= address2%> - "<%= address2 %>" </li>
+            <%} else { %>
+                <li><%= address %> - "<%= address %>"</li> 
+            <% } %>       
+    </ul>
+    <h1>End of page</h1>
+</body>
+
+</html>
